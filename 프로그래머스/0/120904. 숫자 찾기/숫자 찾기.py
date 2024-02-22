@@ -1,7 +1,6 @@
 def solution(num, k):
-    try:
-        result = str(num).index(str(k))+1
-    except:
+    result = str(num).find(str(k))+1
+    if result == 0:
         result = -1
     return result
     
