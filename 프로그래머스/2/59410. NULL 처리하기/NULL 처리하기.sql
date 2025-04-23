@@ -1,0 +1,9 @@
+-- 코드를 입력하세요
+SELECT ANIMAL_TYPE,
+    CASE 
+        WHEN NAME IS NULL THEN 'No name' --NO 대문자로 써서 오답
+        ELSE NAME
+    END AS NAME,
+    SEX_UPON_INTAKE
+FROM ANIMAL_INS
+ORDER BY ANIMAL_ID;
